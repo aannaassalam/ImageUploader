@@ -1,0 +1,233 @@
+.heroSection {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+
+.heroSection .navbar {
+  height: 130px;
+  width: 88%;
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.heroSection .navbar .links {
+  margin-right: 70px;
+}
+
+.heroSection .navbar .links a {
+  color: #252525;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "QuickSand", sans-serif;
+  margin: 0 17px;
+  transition: opacity 0.2s;
+}
+
+.heroSection .navbar .links a:hover {
+  opacity: 0.75;
+}
+
+.heroSection .navbar .links a:last-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 16px;
+  height: 34px;
+  border-radius: 16px;
+  background-color: #cf3f74;
+  color: #fff;
+  transition: background-color 0.2s linear;
+}
+
+.heroSection .navbar .links a:last-child:hover {
+  background-color: rgba(13, 13, 13, 0.25);
+}
+
+.heroSection .navbar .ham-menu {
+  position: fixed;
+  top: 60px;
+  right: 125px;
+  height: 20px;
+  width: 23px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroSection .navbar .ham-menu span {
+  height: 3px;
+  width: 100%;
+  background-color: #252525;
+  margin-bottom: 5px;
+}
+
+.heroSection .circle {
+  position: absolute;
+  top: -10%;
+  right: 55px;
+  width: 105vw;
+  height: 105vw;
+  max-width: 120vh;
+  max-height: 120vh;
+  background-color: rgb(255, 164, 76);
+  border-radius: 50%;
+  transform: translateX(50%);
+}
+
+.heroSection .main-section {
+  display: flex;
+  margin-top: 150px;
+  width: 84%;
+  margin: 150px auto 0;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.heroSection .main-section .video {
+  height: 520px;
+  width: 740px;
+  position: relative;
+  top: -30px;
+  right: -30px;
+  background-image: url("../../assets/orange.jfif");
+  z-index: 99;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.heroSection .main-section .video:hover {
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+
+.heroSection .main-section .video:hover video {
+  transform: scale(1.15);
+  transition: all 0.5s ease-in-out;
+}
+
+.heroSection .main-section .video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.heroSection .main-section .text {
+  padding-top: 100px;
+  width: 41.66667%;
+}
+
+.heroSection .main-section .text .featured {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  overflow: visible;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+
+.heroSection .main-section .text .featured span {
+  opacity: 0;
+  display: inline-block;
+}
+
+.heroSection .main-section .text div {
+  font-size: 56px;
+  font-weight: 200;
+  /* letter-spacing: -0.3em; */
+}
+
+.heroSection .box {
+  width: 110px;
+  height: 25px;
+  background-color: #ccc;
+  opacity: 1;
+  display: inline-block;
+  transform: translate(-107px, 15px);
+}
+
+.heroSection .main-section .text div span {
+  display: inline-block;
+  margin: 0 0.15em 0 0;
+  opacity: 1;
+}
+
+.heroSection .main-section .text div:nth-child(3) {
+  color: #8d8f9a;
+}
+
+.heroSection .main-section .text .btn {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: -10px;
+  padding-top: 110px;
+}
+
+.heroSection .main-section .text .btn button {
+  width: fit-content;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 10px;
+  border: none;
+  overflow: none;
+  cursor: pointer;
+}
+
+.heroSection .main-section .text .btn i {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 20px;
+  color: #ffa44c;
+}
+
+.heroSection .intro {
+  padding: 122px 0 85px;
+  width: 90%;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 90px;
+  font-size: 32px;
+  font-weight: 200;
+  color: #252525;
+}
+
+.heroSection .intro div {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.heroSection .intro p {
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.heroSection .intro a {
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.heroSection .intro a i {
+  font-size: 12px;
+}
