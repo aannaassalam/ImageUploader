@@ -20,22 +20,22 @@ export default class HeroSection extends Component {
   }
 
   componentDidMount() {
-    // TweenMax.from(
-    //   this.video.current,
-    //   3,
-    //   {
-    //     css: {
-    //       height: "1280px",
-    //       width: "1800px",
-    //       position: "fixed",
-    //       top: 0,
-    //       right: 0,
-    //     },
-    //     y: -1800,
-    //     ease: Power3.easeInOut,
-    //   },
-    //   0.5
-    // );
+    TweenMax.from(
+      this.video.current,
+      3,
+      {
+        css: {
+          height: "1280px",
+          width: "1800px",
+          position: "fixed",
+          top: 0,
+          right: 0,
+        },
+        y: -1800,
+        ease: Power3.easeInOut,
+      },
+      0.5
+    );
     TweenMax.to(this.featured.current, 1, {
       opacity: 1,
       y: -20,
