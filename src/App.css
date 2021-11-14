@@ -1,7 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-/* 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-} */
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .box {
+  width: 500px;
+  /* border: 1px solid #707070; */
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 60px;
+  height: 70vh;
+  overflow-y: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.App .box h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.App .box #label {
+  margin: 40px 0;
+  display: block;
+}
+
+.App .box #label input {
+  margin-right: 10px;
+}
+
+.App .box button {
+  display: block;
+  margin: 40px 0 20px;
+}
+
+.App .box .url {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
